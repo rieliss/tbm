@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alexander Alexiev",
+  title: "Gene",
   description:
     "Personal website of Alexander Alexiev - Engineering Science student at the University of Toronto",
 };
