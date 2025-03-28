@@ -6,7 +6,6 @@ import ExperienceSection from "@/components/experience-section";
 // import Footer from "@/components/footer";
 import Link from "next/link";
 
-// Actual data from alex-alexiev.github.io
 const profileData = {
   name: "Alexander Alexiev",
   bio: (
@@ -161,6 +160,7 @@ const experiences = [
       "Working under the supervision of prof. Florian Shkurti.",
       "Focusing on making robots interact with the world effortlessly.",
     ],
+    imageUrl: "/ea-logo.png",
   },
   {
     title: "Biomedical Robotics Researcher",
@@ -172,6 +172,7 @@ const experiences = [
       "Contributed to research on implantable and ingestible devices.",
       "Collaborated with researchers on publications in the field.",
     ],
+    imageUrl: "/placeholder.svg?height=400&width=600&text=Microactuator",
   },
   {
     title: "Machine Learning Intern",
@@ -183,17 +184,7 @@ const experiences = [
       "Developed and implemented algorithms for various applications.",
       "Gained practical experience in artificial intelligence.",
     ],
-  },
-];
-
-// Education data based on the bio information
-const education = [
-  {
-    degree: "Engineering Science",
-    institution: "University of Toronto",
-    location: "Toronto, Canada",
-    period: "Current",
-    description: "Major in Robotics with a Minor in Artificial Intelligence.",
+    imageUrl: "/rbl-logo.png",
   },
 ];
 
@@ -206,7 +197,7 @@ export default function Home() {
         <ProfileSection {...profileData} />
         <PublicationsSection publications={publications} />
         <ProjectsSection projects={projects} />
-        <ExperienceSection experiences={experiences} education={education} />
+        <ExperienceSection experiences={experiences} />
       </div>
       {/* <Footer /> */}
     </main>
